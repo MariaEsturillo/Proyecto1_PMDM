@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#282828">
+
+    <ImageView
+        android:id="@+id/imagenProd"
+        android:layout_width="288dp"
+        android:layout_height="263dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/detalletitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/comentario1"
+        android:layout_width="315dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="monospace"
+        android:text="Lorem ipsum dolor sit amet. Non consectetur saepe vel totam consectetur qui sunt voluptatibus vel sapiente voluptatem sed sunt accusamus qui dolore molestiae. "
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="310dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/detalleComent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/detalledescr"
+        android:layout_width="287dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="monospace"
+        android:text="detalle descripcion"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/detalletitulo"
+        android:layout_width="232dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="monospace"
+        android:text="detalle titulo"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/detalledescr"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/detalleComent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="monospace"
+        android:text="Comentarios"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/comentario1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

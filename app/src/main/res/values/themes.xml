@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Proyecto_App" parent="Theme.AppCompat.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<item name="colorPrimary">@color/ColorPrimary</item>
+        <item name="titleTextColor">@color/ColorActionBarTitle</item>
+    </style>
+    <style name="Theme.Proyecto_App" parent="Base.Theme.Proyecto_App" />
+</resources>

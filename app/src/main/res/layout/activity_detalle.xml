@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardviewdetalle"
+    android:layout_width="170dp"
+    android:layout_height="290dp"
+    android:layout_margin="10dp"
+    android:clickable="true"
+    app:cardBackgroundColor="#2D504F"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:cardMaxElevation="2dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <TextView
+        android:id="@+id/txt_item_titulo"
+        android:layout_width="150dp"
+        android:layout_height="289dp"
+        android:fontFamily="monospace"
+        android:paddingStart="15dp"
+        android:paddingTop="200dp"
+        android:paddingBottom="10dp"
+        android:text="titulo_de_producto"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_item"
+        android:layout_width="170dp"
+        android:layout_height="201dp"
+        android:contentDescription="@string/imagen_producto"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="15dp"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.cardview.widget.CardView>
+
+
+
